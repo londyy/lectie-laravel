@@ -29,7 +29,8 @@ public function create()
 */
 public function store(Request $request)
 {
-//
+    Product::create($request->all());
+    return response()->json('produsul a fost creat');
 }
 
 /**
